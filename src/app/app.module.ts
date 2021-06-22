@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbCardModule,  } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { PCCardComponent } from './pccard/pccard.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PCCardComponent } from './pccard/pccard.component';
     NbSidebarModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,
-    NbCardModule
+    NbCardModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
