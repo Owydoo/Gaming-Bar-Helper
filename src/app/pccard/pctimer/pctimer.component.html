@@ -2,6 +2,8 @@
     <nb-card-body>
         <p>{{time}}</p>
 
-        <button nbButton hero status="primary" (click)="launchTimer()">lancer</button>
+        <button nbButton hero status="primary" (click)="launchTimer()" *ngIf ="!timerIsOn">lancer</button>
+        <button nbButton hero status="warning" (click)="pauseTimer()" *ngIf ="timerIsOn">pause</button>
+        <button nbButton hero status="danger" (click)="resetTimer()" *ngIf ="timerIsOn">reset</button>
     </nb-card-body>
 </nb-card>
