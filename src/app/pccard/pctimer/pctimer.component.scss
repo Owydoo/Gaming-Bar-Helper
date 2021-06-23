@@ -6,9 +6,15 @@ nb-card-body {
 * {
     // padding-bottom: 0px;
     margin-bottom: 0px;
+
 }
 
-p {
+.timeOk {
     font-family: 'Courier New', Courier, monospace;
     align-self: center;
+}
+.timeBad {
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    color: red;
 }

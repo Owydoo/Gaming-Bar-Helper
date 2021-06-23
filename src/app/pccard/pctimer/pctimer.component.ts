@@ -34,7 +34,7 @@ export class PctimerComponent implements OnInit {
     this.timerIsStartedOnce = true;
     this.timerInterval = setInterval(() => {
       this.update();
-    }, 1000);
+    }, 1);
   
     // else {
     //   if (this.timerIsOn) {
@@ -58,6 +58,7 @@ export class PctimerComponent implements OnInit {
     this.time = '00:00:00';
     this.nbSecond = 0;
 
+    this.timerIsStartedOnce = false
 
   }
 
@@ -97,4 +98,5 @@ export class PctimerComponent implements OnInit {
 
     this.time = hStr + ':' + mStr + ':' + sStr;
   }
+
 }

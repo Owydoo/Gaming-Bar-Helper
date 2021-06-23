@@ -1,9 +1,10 @@
 <nb-card class="small">
     <nb-card-body>
-        <p>{{time}}</p>
+        <div class="timeOk" *ngIf="nbSecond < 3600">{{time}}</div>
+        <div class="timeBad" *ngIf="nbSecond > 3600">{{time}}</div>
 
         <button nbButton hero status="primary" (click)="launchTimer()" *ngIf ="!timerIsOn">lancer</button>
         <button nbButton hero status="warning" (click)="pauseTimer()" *ngIf ="timerIsOn">pause</button>
-        <button nbButton hero status="danger" (click)="resetTimer()" *ngIf ="timerIsOn">reset</button>
+        <button nbButton hero status="danger" (click)="resetTimer()" *ngIf ="timerIsStartedOnce">reset</button>
     </nb-card-body>
 </nb-card>
