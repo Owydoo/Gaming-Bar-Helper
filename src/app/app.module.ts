@@ -9,13 +9,16 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { PCCardComponent } from './pccard/pccard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PctimerComponent } from './pccard/pctimer/pctimer.component';
+import { NameformComponent } from './pccard/nameform/nameform.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PCCardComponent,
-    PctimerComponent
+    PctimerComponent,
+    NameformComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { PctimerComponent } from './pccard/pctimer/pctimer.component';
     NbEvaIconsModule,
     NbCardModule,
     NgbModule,
-    NbButtonModule
+    NbButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

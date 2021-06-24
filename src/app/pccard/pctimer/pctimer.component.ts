@@ -34,7 +34,7 @@ export class PctimerComponent implements OnInit {
     this.timerIsStartedOnce = true;
     this.timerInterval = setInterval(() => {
       this.update();
-    }, 1);
+    }, 1000);
   
     // else {
     //   if (this.timerIsOn) {

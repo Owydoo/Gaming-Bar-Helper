@@ -12,7 +12,7 @@ export class PCCardComponent implements OnInit {
   set name(name: string) {
     this._name = (name && name.trim()) || '<no name set>';
   }
-  private _name = 'Default Name';
+  private _name = '';
 
   @Input()
   get number(): number { return this._number;}
@@ -21,11 +21,12 @@ export class PCCardComponent implements OnInit {
   }
   private _number = 0;
 
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  receiveFirstName($event: any) {
+    this.name = $event
+  }
 }

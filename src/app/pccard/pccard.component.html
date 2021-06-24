@@ -5,9 +5,9 @@
     </nb-card-header>
     <nb-card-body>
         <app-pctimer></app-pctimer>
-        <!-- <p>pccard works!</p> -->
     </nb-card-body>
     <nb-card-footer>
-        <p>{{name}}</p>
+        {{name}}
+        <app-nameform (firstNameEvent)="receiveFirstName($event)"></app-nameform>
     </nb-card-footer>
 </nb-card>
