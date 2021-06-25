@@ -1,6 +1,25 @@
 # BarHelperTest
 
+Gaming Bar Helper est un projet d'application native Angular/Electron permettant à un patron de bar gaming de gérer le temps que passent ses clients sur les ordinateurs de l'établissement.
+Pour le moment, seule une fonctionnalité de chronomètre par pc est implémentée.
+
+## Ce qui est présent :
+- Pouvoir lancer un timer pour chaque PC présent, le mettre en pause et le réinitialiser. Ce timer passe en rouge quand il dépasse une heure.
+Il est aussi possible de changer le nom associé à ce PC
+![image](https://user-images.githubusercontent.com/36131543/123389405-222d3500-d59a-11eb-8513-3259382891b2.png)
+
+
+## Comment lancer l'application ?
+> Il faudra évidemment `npm install` avant l'étape suivante.
+
+- __Développer sous Angular__ : `ng serve` 
+- __Vérifier le résulat sur l'application native en Electron__ : `npm start` <br/> Cette commande va lancer `ng serve` et `npm run electron` en concurrence.
+- __Créer le dossier exécutable dans la distrib' de votre choix__ : `npm run package:win`, `npm run package:linux`, `npm run package:osx` ou `npm run package:all`
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+
+
 
 ## Development server
 
