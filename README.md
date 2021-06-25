@@ -3,6 +3,8 @@
 Gaming Bar Helper est un projet d'application native Angular/Electron permettant à un patron de bar gaming de gérer le temps que passent ses clients sur les ordinateurs de l'établissement.
 Pour le moment, seule une fonctionnalité de chronomètre par pc est implémentée.
 
+Par [Hugo Hersemeule](https://github.com/owydoo) et [Camille Ostrowski](https://github.com/graveaccentquote)
+
 ## Ce qui est présent :
 - Pouvoir lancer un timer pour chaque PC présent, le mettre en pause et le réinitialiser. Ce timer passe en rouge quand il dépasse une heure.
 Il est aussi possible de changer le nom associé à ce PC
