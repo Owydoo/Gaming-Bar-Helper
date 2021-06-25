@@ -1,4 +1,4 @@
-# BarHelperTest
+# Gaming Bar Helper
 
 Gaming Bar Helper est un projet d'application native Angular/Electron permettant à un patron de bar gaming de gérer le temps que passent ses clients sur les ordinateurs de l'établissement.
 Pour le moment, seule une fonctionnalité de chronomètre par pc est implémentée.
