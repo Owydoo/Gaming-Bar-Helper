@@ -5,7 +5,7 @@
 
     <button
       nbButton
-      hero
+      outline
       status="primary"
       (click)="launchTimer()"
       *ngIf="!timerIsOn"
@@ -14,7 +14,7 @@
     </button>
     <button
       nbButton
-      hero
+      outline
       status="warning"
       (click)="pauseTimer()"
       *ngIf="timerIsOn"
@@ -23,7 +23,7 @@
     </button>
     <button
       nbButton
-      hero
+      outline
       status="danger"
       (click)="resetTimer()"
       *ngIf="timerIsStartedOnce"
