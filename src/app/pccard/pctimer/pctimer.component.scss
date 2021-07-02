@@ -1,6 +1,8 @@
 nb-card-body {
     display: flex;
     flex-direction: row;
+    padding : 5px 10px;
+    justify-content: space-between;
 }
 
 * {
@@ -8,13 +10,15 @@ nb-card-body {
     margin-bottom: 0px;
 
 }
+.time {
 
-.timeOk {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
     align-self: center;
 }
+
+.timeOk {
+}
 .timeBad {
-    font-family: 'Courier New', Courier, monospace;
-    align-self: center;
     color: red;
 }
