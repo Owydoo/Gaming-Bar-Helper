@@ -1,7 +1,7 @@
 <nb-card class="small">
   <nb-card-body>
-    <div class="time timeOk" *ngIf="nbSecond < 3600">{{ time }}  ✅ </div>
-    <div class="time timeBad" *ngIf="nbSecond > 3600">{{ time }} ! 🔥🔥🔥   </div>
+    <div class="time timeOk" *ngIf="nbSecond < 5">{{ time }}  ✅ </div>
+    <div class="time timeBad" *ngIf="nbSecond >= 5">{{ time }} 🔥   </div>
 
     <button
       nbButton

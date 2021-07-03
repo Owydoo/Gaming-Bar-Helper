@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bar-helper-test';
+  public isDarkModeOn:boolean = true;
+
+  constructor(private themeService: NbThemeService){}
+
+  changeThemeToDark(){
+    this.themeService.changeTheme('dark')
+    this.isDarkModeOn = true;
+  }
+
+  changeThemeToLight(){
+    this.themeService.changeTheme('default')
+    this.isDarkModeOn = false;
+  }
 }

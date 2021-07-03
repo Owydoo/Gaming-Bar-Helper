@@ -1,7 +1,11 @@
 <nb-layout>
-  <!-- <nb-layout-header subheader>header</nb-layout-header>
-  <nb-sidebar>Sidebar Content</nb-sidebar> -->
+  <nb-layout-header subheader>
+    <button *ngIf="!isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToDark()">Dark Mode</button>
+    <button *ngIf="isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToLight()">Light Mode</button>
+  </nb-layout-header>
+  <!-- <nb-sidebar>Sidebar Content</nb-sidebar> -->
   <nb-layout-column>
+    <!-- <button nbButton (click)="changeTheme()">text</button> -->
     <div class="container">
       <div class="row">
         <div class="col-sm">
