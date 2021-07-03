@@ -6,9 +6,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
     <form>
       <div class="form-group">
         <label for="name"></label>
-        <input ngModel name="firstName" #firstName="ngModel" (change)="sendFirstName(firstName)" id="firstName" type="text" class="form-control">
+        <input nbInput ngModel name="firstName" #firstName="ngModel" (change)="sendFirstName(firstName)" id="firstName" type="text" class="form-control">
       </div>
-      <button nbButton>Changer le nom</button>
+      <button nbButton outline status="primary">Changer le nom</button>
     </form>
   `,
   styles: [
