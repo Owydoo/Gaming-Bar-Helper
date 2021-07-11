@@ -1,3 +1,10 @@
 <!-- <p>page component</p> -->
-
-<router-outlet></router-outlet>
+<nb-layout>
+  <nb-layout-header subheader>
+    <button *ngIf="!isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToDark()">Dark Mode</button>
+    <button *ngIf="isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToLight()">Light Mode</button>
+  </nb-layout-header>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>

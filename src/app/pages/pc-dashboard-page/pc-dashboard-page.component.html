@@ -1,32 +1,29 @@
 <nb-layout>
-    <nb-layout-header subheader>
-      <button *ngIf="!isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToDark()">Dark Mode</button>
-      <button *ngIf="isDarkModeOn" nbButton outline status="primary" (click)="changeThemeToLight()">Light Mode</button>
-    </nb-layout-header>
     <nb-layout-column>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <app-pccard [name]="'Lux'" [number]="1" ></app-pccard>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <app-pccard [name]="'Lux'" [number]="1" ></app-pccard>
+            </div>
+            <div class="col-sm">
+              <app-pccard [name]="'Lucian'" [number]="2"></app-pccard>
+            </div>
+            <div class="col-sm">
+              <app-pccard [name]="'Jinx'" [number]="3"></app-pccard>
+            </div>
           </div>
-          <div class="col-sm">
-            <app-pccard [name]="'Lucian'" [number]="2"></app-pccard>
-          </div>
-          <div class="col-sm">
-            <app-pccard [name]="'Jinx'" [number]="3"></app-pccard>
+          <div class="row">
+            <div class="col-sm">
+              <app-pccard [name]="'Fizz'" [number]="4"></app-pccard>
+            </div>
+            <div class="col-sm">
+              <app-pccard [name]="'Senna'" [number]="5"></app-pccard>
+            </div>
+            <div class="col-sm">
+              <app-pccard [name]="'Ashe'" [number]="6"></app-pccard>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <app-pccard [name]="'Fizz'" [number]="4"></app-pccard>
-          </div>
-          <div class="col-sm">
-            <app-pccard [name]="'Senna'" [number]="5"></app-pccard>
-          </div>
-          <div class="col-sm">
-            <app-pccard [name]="'Ashe'" [number]="6"></app-pccard>
-          </div>
-        </div>
-      </div>
     </nb-layout-column>
-  </nb-layout>
+</nb-layout>

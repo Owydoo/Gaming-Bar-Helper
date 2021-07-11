@@ -8,5 +8,18 @@ import { NbThemeService } from '@nebular/theme';
 })
 export class PagesComponent {
 
+  public isDarkModeOn:boolean = true;
+
+  constructor(private themeService: NbThemeService){}
+
+  changeThemeToDark(){
+    this.themeService.changeTheme('dark')
+    this.isDarkModeOn = true;
+  }
+
+  changeThemeToLight(){
+    this.themeService.changeTheme('default')
+    this.isDarkModeOn = false;
+  }
 
 }
