@@ -8,6 +8,9 @@ import { PCCardComponent } from './pc-dashboard-page/pccard/pccard.component';
 import { NameformComponent } from './pc-dashboard-page/pccard/nameform/nameform.component';
 import { PctimerComponent } from './pc-dashboard-page/pccard/pctimer/pctimer.component';
 import { FormsModule } from '@angular/forms';
+import { PcDashboardPageComponent } from './pc-dashboard-page/pc-dashboard-page.component';
+import { ControllersPageComponent } from './controllers-page/controllers-page.component';
+
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { FormsModule } from '@angular/forms';
     PagesComponent,
     PCCardComponent,
     NameformComponent,
-    PctimerComponent
+    PctimerComponent,
+    PcDashboardPageComponent,
+    ControllersPageComponent
+
   ],
   imports: [
     CommonModule,
